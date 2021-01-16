@@ -1,0 +1,67 @@
+{
+    "language": {
+        "de": "Almanca",
+        "en": "ingilizce",
+        "tr": "Türk"
+    },
+    "hilfe": {
+        "allgemein": "Burada işlevlerime genel bir bakış var.\nBir taksi çağırmam için bana bir <b> konum </b> gönderin.",
+        "user": "<u>Genel:</u>\n- /help Bu mesajı gösterir\n- /language Burada dili değiştirebilirsiniz\n- /alive Botun durumunu gösterir\n- /lizenz Botla ilgili bilgileri gösterir",
+        "fahrer": "<u>sürücü:</u>\n- Sen şoförsün, istekler alabilirsin.",
+        "admin": "<u>Yönetici:</u>\n- /addAdmin Kullanıcıya yönetici hakları verir\n- /remAdmin Kullanıcıdan yönetici haklarını kaldırır\n- /addFahrer Kullanıcıya sürücü hakları verir.\n- /remFahrer Sürücü haklarını kullanıcıdan kaldırır.\n- /setAdminChat [dil] Mevcut sohbeti * yönetici sohbeti olarak ayarlar\n- /getAdminChat Mevcut AdminChat'in parametrelerini gösterir\n\n*AdminChat: Yönetici sohbeti, tüm taksi sürücülerinin bulunduğu bir grup olmalıdır. Bu sohbette botun müşterilerden aldığı siparişler yayınlanır.",
+        "unReg": "Lütfen kaydolmak için /start kullanın."
+    },
+    "start": {
+        "Willkommen": "Nürnberg Taksi Botuna hoş geldiniz\nLütfen dilinizi seçin.",
+        "NachSprachEinabe": "Dil seçimi kaydedildi\n\nBir taksi sipariş etmek için bana bir yer gönderebilirsiniz.\n/ help ile kullanabileceğiniz tüm komutları çağırabilirsiniz.",
+        "UnknownError": "Bilinmeyen bir <b> hata </b> oluştu.",
+        "AlreadyReg": "Zaten kayıtlısınız, lütfen /language kullanın dili değiştirmek için. \nUse /help kullanılabilir tüm komutları görebilirsiniz."
+    },
+    "sprache": {
+        "WurdeGeändert": "Diliniz başarıyla ayarlandı.",
+        "Message": "Lütfen geçmek istediğiniz dili seçin.",
+        "FehlendeRegestrierung": "Lütfen önce kendinizi kaydedin /start"
+    },
+    "DriverManagment": {
+        "Promote": "{{username}} kullanıcısı artık bir taksi şoförü ve artık yolculukları kabul edebilir.",
+        "Demote": "{{username}} kullanıcısı artık bir taksi şoförü değil."
+    },
+    "AdminManagment": {
+        "Promote": "{{username}} kullanıcısı artık yönetici ve diğer kullanıcıları sürücüye dönüştürebilir.",
+        "Demote": "{{username}} kullanıcısı artık bir yönetici değil.",
+        "NotReg": "<b> Hata: </b> Burada düzenlenecek kullanıcı kayıtlı değildir."
+    },
+    "AdminChat": {
+        "Sucsess": "Yönetici sohbeti güncellendi ve şu dili kullanıyor: <pre language='c++'>{{language}}</pre>",
+        "GetChat": "Yönetici sohbeti <i>{{ChatName}}</i> <pre language = 'c++'> {{ChatID}}</pre> kimliği ve ayar dili: <pre language = 'c ++'> {{language}} </pre>"
+    },
+    "Ordering": {
+        "AnfrageAbbrechen": "<b> İş iptal edildi. </b>",
+        "Anfrage": "{{username}} kullanıcısı <i> {{adress}} </i> için bir taksi siparişi verdi. \n<a href='{{GoogleMapsURL}}'>Google Maps</a>\n\nBu kullanıcı {{userscore}} adlı kullanıcıdan bir derecelendirme var \nBu siparişi onaylamak ister misiniz?",
+        "EditUserAnfrage": "İstek gönderildi. Kabul edildiğinde bir bildirim olacak!",
+        "AuftragAngenommenUser": "Siparişiniz <i> kabul edildi </i>. Taksi de geliyor <i>{{adress}}</i>\n<a href='{{GoogleMapsURL}}'>Google Maps</a>",
+        "AuftragAbgelehntUser": "Siparişiniz <i> reddedildi </i>.",
+        "EditAuftragAngenommenUser": "{{username}} siparişi kabul etti, müşteriye bir bildirim gönderildi. \n\nLütfen seyahatten sonra müşteriyi değerlendirin.",
+        "EditAuftragAbgelehntUser": "{{username}} işi reddetti"
+    },
+    "rating": {
+        "Plus": "{{fahrername}}, {kundenname}} 'na {{adresse}} gezisine olumlu puan verdi",
+        "Minus": "{{fahrername}}, {{kundenname}} 'na {{adresse}} gezisi için olumsuz puan verdi"
+    },
+    "OnLocation": {
+        "NotRegistriert": "Lütfen önce /start ile kaydolun.",
+        "Bestätigung": "Bu pozisyona taksi çağırmak ister misiniz?",
+        "BestätigungAdress": "Bu pozisyona taksi çağırmak ister misiniz? \nKalifiye olmayan adres:\n<i>{{adress}}</i>",
+        "InternerFehler": "<b> Hata: </b> Dahili bir sunucu hatası oluştu, lütfen tekrar deneyin.",
+        "UnknownError": "Bilinmeyen bir <b> hata </b> oluştu."
+    },
+    "fehler": {
+        "MustBeReply": "<b> Hata: </b> Bu yalnızca başka bir kullanıcıya yanıt olarak kullanılabilir!",
+        "NotEnothPerms": "<b> Hata: </b> Yönetici değilsiniz veya yükseltmek istediğiniz kullanıcı kayıtlı değil.",
+        "IsDerank": "<b> Hata: </b> Kullanıcı, ona vermek istediğinizden daha fazla hakka zaten sahip.",
+        "FileError": "<b> Hata: </b> Bir hata var, lütfen bot yöneticisine başvurun.",
+        "SpracheNichtUnterstützt": "<b> Hata: </b> Bu dil (<i> {{dil}} </i>) maalesef henüz desteklenmiyor.",
+        "SpracheFehlt": "<b> Hata </b>: Lütfen dili girin.",
+        "BrauchtAdmin": "<b> Hata </b>: Bu işlev yönetici hakları gerektirir."
+    }
+}

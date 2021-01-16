@@ -1,0 +1,25 @@
+{
+  "name": "call-a-taxi",
+  "version": "0.0.1",
+  "description": "Call a Taxi",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mysql": "^2.18.1",
+    "new-i18n": "^3.0.0-3",
+    "openrouteservice-js": "^0.1.16",
+    "ping": "^0.4.0",
+    "randomstring": "^1.1.5",
+    "systeminformation": "^4.33.4",
+    "telebot": "^1.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db": "node ./scrips/createDB.js"
+  },
+  "keywords": [
+    "Taxi"
+  ],
+  "author": "BolverBlitz",
+  "license": "AGPL-3.0"
+}

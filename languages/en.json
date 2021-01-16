@@ -1,0 +1,17 @@
+{
+    "language": {
+        "de": "German",
+        "en": "English"
+    },
+    "start": {
+        "Willkommen": "Welcome to OWL-Games\nPlease choose your language",
+        "NachSprachEinabe": "Language has been set.\n\n Use /help to list all commands you can use.",
+        "UnknownError": "An unknown error occured",
+        "AlreadyReg": "You are already registered. Please use /start to change your language"
+    },
+    "sprache": {
+        "WurdeGeändert": "Your language has been changed.",
+        "Message": "Please choose your language",
+        "FehlendeRegestrierung": "Please use /start to register"
+    }
+}

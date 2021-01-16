@@ -1,0 +1,67 @@
+{
+    "language": {
+        "de": "Deutsch",
+        "en": "Englisch",
+        "tr": "Türkisch"
+    },
+    "hilfe": {
+        "allgemein": "Hier hast du eine Übersicht über meine Funktionen.\nSchick mir einfach einen <b>Standort</b> um ein Taxi zu rufen.",
+        "user": "<u>Allgemein:</u>\n- /hilfe Zeigt diese Nachricht\n- /sprache Hier kannst du die Sprache ändern\n- /alive Zeigt den Status des Bots\n- /lizenz Zeigt Informationen über den Bot",
+        "fahrer": "<u>Fahrer:</u>\n- Du bist fahrer, du kannst Anfragen annehmen.",
+        "admin": "<u>Admin:</u>\n- /addAdmin Gibt dem Benutzer Adminrechte\n- /remAdmin Endzieht dem Nutzer Adminrechte\n- /addFahrer Gibt dem Benutzer Fahrerrechte\n- /remFahrer Endzieht dem Nutzer Fahrerrechte.\n- /setzeAdminChat [Sprache] Setzt den Aktuellen Chat als *Adminchat\n- /zeigeAdminChat Zeigt die Parameter des aktuellen AdminChats\n\n*AdminChat: Der Adminchat sollte eine Gruppe sein, in der alle Taxifahrer sind. In diesem Chats werden die Aufträge gepostet die der Bot von Kunden erhält.",
+        "unReg": "Bitte benutze /start um dich zu registrieren."
+    },
+    "start": {
+        "Willkommen": "Willkommen zu Nürnberger Taxi Bot\nBitte wähle deine Sprache aus.",
+        "NachSprachEinabe": "Sprachauswahl wurde gespeichert\n\nUm ein Taxi zu bestellen kannst du mir einfach einen Standort schicken.\nMit /hilfe kannst du alle Befehle abrufen die dir zur verfügung stehen.",
+        "UnknownError": "Es ist ein Unbekannter <b>Fehler</b> aufgetreten.",
+        "AlreadyReg": "Du bist bereits regestriert, bitte nutze /sprache um die Sprache zu ändern.\nMit /hilfe kannst du alle verfügbaren Befehle sehen."
+    },
+    "sprache": {
+        "WurdeGeändert": "Deine Sprache wurde erfolgreich angepasst.",
+        "Message": "Bitte wähle die Sprache zu der du wechseln möchtest.",
+        "FehlendeRegestrierung": "Bitte regestriere dich zuerst mit /start"
+    },
+    "DriverManagment": {
+        "Promote": "Der Benutzer {{username}} ist nun ein Taxifahrer, er kann nun Fahrten annehmen.",
+        "Demote": "Der Benutzer {{username}} ist ab jetzt kein Taxifahrer mehr."
+    },
+    "AdminManagment": {
+        "Promote": "Der Benutzer {{username}} ist nun Admin und kann andere Nutzer zu Fahrern machen.",
+        "Demote": "Der Benutzer {{username}} ist nun kein Admin mehr.",
+        "NotReg": "<b>Fehler:</b> Der Benutzer der hier bearbeitet werden soll, ist nicht registriert."
+    },
+    "AdminChat": {
+        "Sucsess": "Der Adminchat wurde aktualisiert und nutzt die Sprache: <pre language='c++'>{{language}}</pre>",
+        "GetChat": "Der Adminchat ist <i>{{ChatName}}</i> mit der ID <pre language='c++'>{{ChatID}}</pre> und die eingestellten Sprache: <pre language='c++'>{{language}}</pre>"
+    },
+    "Ordering": {
+        "AnfrageAbbrechen": "<b>Auftrag wurde abgebrochen.</b>",
+        "Anfrage": "Der Nutzer {{username}} hat ein Taxi zu <i>{{adress}}</i> bestellt.\n<a href='{{GoogleMapsURL}}'>Google Maps</a>\n\nDieser Nutzer hat eine Bewertung von {{userscore}}\nMöchten sie diesen Auftrag bestätigen?",
+        "EditUserAnfrage": "Die Anfrage wurde abgeschickt. Es wird eine Benachrichtigung geben wenn sie angenommen wurde!",
+        "AuftragAngenommenUser": "Dein Auftrag wurde <i>angenommen</i>. Das Taxi kommt zu <i>{{adress}}</i>\n<a href='{{GoogleMapsURL}}'>Google Maps</a>",
+        "AuftragAbgelehntUser": "Dein Auftrag wurde <i>abgelehnt</i>.",
+        "EditAuftragAngenommenUser": "{{username}} hat den Auftrag angenommen, eine Benachrichtigung wurde an den Kunden geschickt.\n\nBitte bewerten Sie den Kunden nach der Fahrt.",
+        "EditAuftragAbgelehntUser": "{{username}} hat den Auftrag abgelehnt"
+    },
+    "rating": {
+        "Plus": "{{fahrername}} hat {{kundenname}} für die fahrt nach {{adresse}} postiv bewertet",
+        "Minus": "{{fahrername}} hat {{kundenname}} für die fahrt nach {{adresse}} negativ bewertet"
+    },
+    "OnLocation": {
+        "NotRegistriert": "Bitte registriere dich zuerst mit /start.",
+        "Bestätigung": "Möchten sie verbindlich ein Taxi zu dieser Position rufen?",
+        "BestätigungAdress": "Möchten sie verbindlich ein Taxi zu dieser Position rufen?\nUngefäre Adresse:\n<i>{{adress}}</i>",
+        "InternerFehler": "<b>Fehler:</b> Es ist ein interner Server fehler aufgetreten, bitte erneut versuchen.",
+        "UnknownError": "Es ist ein Unbekannter <b>Fehler</b> aufgetreten."
+    },
+    "fehler": {
+        "MustBeReply": "<b>Fehler:</b> Das kann nur als Antwort auf einen anderen Benutzer verwendet werden!",
+        "NotEnothPerms": "<b>Fehler:</b> Du bist nicht Admin oder der Nutzer den du befördern willst ist nicht regestriert.",
+        "IsDerank": "<b>Fehler:</b> Der Nutzer hat bereits mehr Rechte als du Ihm geben möchtest.",
+        "FileError": "<b>Fehler:</b> Ein Fehler ist aufgeterten, bitte wende dich an den Bot Admin.",
+        "SpracheNichtUnterstützt": "<b>Fehler:</b> Diese Sprache (<i>{{language}}</i>) wird leider noch nicht unterstützt.",
+        "SpracheFehlt": "<b>Fehler</b>: Bitte geben Sie die Sprache an.",
+        "BrauchtAdmin": "<b>Fehler</b>: Diese Funktion benötigt Admin Rechte."
+    }
+}
